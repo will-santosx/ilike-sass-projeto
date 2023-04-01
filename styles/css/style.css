@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #151515;
+  padding: 10px;
+  width: 100%;
+}
+
+header {
+  padding: 10px;
+  width: 100%;
+  color: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+}
+header .nav-home-link {
+  transition: 0.3s ease-out;
+  letter-spacing: 2px;
+}
+header .nav-home-link:hover {
+  color: #683bd1;
+}
+header div.nav-social-media a {
+  margin: 0 7px;
+  font-size: 28px;
+}
+header div.nav-social-media a i {
+  transition: 0.3s ease-out;
+}
+header div.nav-social-media a i:hover {
+  color: #683bd1;
+}
+
+main {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main div.album-card {
+  width: 30rem;
+  height: 17rem;
+  margin: 10px 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  gap: 1.4rem;
+  flex-direction: column;
+}
+main div.album-card h4 {
+  color: #683bd1;
+  font-weight: 700;
+}
+main div.album-card button {
+  width: 60%;
+  height: 30px;
+  background-color: #0e0e0e;
+  color: #fdfdfd;
+  border-radius: 7px;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+main div.album-card button:hover {
+  color: #683bd1;
+  background-color: #fdfdfd;
+}
+main #card-1 {
+  background-image: url("../../assets/images/artistas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-1:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-2 {
+  background-image: url("../../assets/images/artes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-2:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-3 {
+  background-image: url("../../assets/images/basquete.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-3:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-4 {
+  background-image: url("../../assets/images/futebol.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-4:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-5 {
+  background-image: url("../../assets/images/carros.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-5:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-6 {
+  background-image: url("../../assets/images/musicas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-6:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-7 {
+  background-image: url("../../assets/images/viagens.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-7:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+main #card-8 {
+  background-image: url("../../assets/images/jogos.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
+main #card-8:hover {
+  width: 31rem;
+  filter: grayscale(0);
+}
+
+footer {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+footer span {
+  color: #fdfdfd;
+  font-size: 9px;
+}
+
+/*# sourceMappingURL=style.css.map */

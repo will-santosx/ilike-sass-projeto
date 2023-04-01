@@ -1,0 +1,24 @@
+@use 'variables'
+
+@mixin container()
+    padding: 10px
+    width: 100%
+
+@mixin flex-center()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin card-image($image)
+    background-image: url('../../assets/images/#{$image}')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    filter: grayscale(1)
+    transition: variables.$transition-hover
+
+    &:hover
+        width: 31rem
+        filter: grayscale(0)
+
+    

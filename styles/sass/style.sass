@@ -1,0 +1,105 @@
+
+@use 'variables'
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+a
+    text-decoration: none
+    color: inherit
+
+body
+    background-color: variables.$container-color
+    @include mixins.container
+
+header
+    @include mixins.container
+    color: variables.$primary-color
+    display: flex
+    align-items: center
+    justify-content: space-between
+    h1
+        font-family: 'Josefin Sans', sans-serif
+        font-size: 36px
+        font-style: italic
+    .nav-home-link
+        transition: variables.$transition-hover
+        letter-spacing: 2px
+        &:hover
+            color: variables.$secondary-color
+    div.nav-social-media
+        a
+            margin: 0 7px
+            font-size: 28px
+
+            i
+                transition: variables.$transition-hover
+                &:hover
+                    color: variables.$secondary-color
+
+main
+    @include mixins.container
+    @include mixins.flex-center
+    flex-wrap: wrap
+    div.album-card
+        width: 30rem
+        height: 17rem
+        margin: 10px 20px
+        padding: 10px
+        @include mixins.flex-center
+        border-radius: 1rem
+        gap: 1.4rem
+        flex-direction: column
+        h4
+            color: variables.$secondary-color
+            font-weight: 700
+        button
+            width: 60%
+            height: 30px
+            background-color: #0e0e0e
+            color: variables.$primary-color
+            border-radius: 7px
+            border: none
+            font-weight: 800
+            letter-spacing: 3px
+            cursor: pointer
+            transition: variables.$transition-hover
+
+            &:hover
+                color: variables.$secondary-color
+                background-color: variables.$primary-color
+
+    #card-1
+        @include mixins.card-image('artistas.jpg')
+
+    #card-2
+        @include mixins.card-image('artes.jpg')
+
+    #card-3
+        @include mixins.card-image('basquete.jpg')
+
+    #card-4
+        @include mixins.card-image('futebol.jpg')
+
+    #card-5
+        @include mixins.card-image('carros.jpeg')
+
+    #card-6
+        @include mixins.card-image('musicas.jpg')
+
+    #card-7
+        @include mixins.card-image('viagens.jpg')
+
+    #card-8
+        @include mixins.card-image('jogos.jpg')
+
+footer
+    @include mixins.container
+    text-align: center
+    span
+        color: variables.$primary-color
+        font-size: 9px
